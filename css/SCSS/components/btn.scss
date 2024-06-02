@@ -1,0 +1,96 @@
+@import 'color.scss';
+$colborder: #afafaf;
+.btn{
+	border: 1px solid $colborder;
+	cursor: pointer;
+	margin: 0;
+	padding: .4em .6em;
+	display: inline-block;
+	border-radius: 0px;
+	background: $colblanco;
+	text-decoration: none;
+	text-shadow: none;
+	color: $colgriscla;
+	font-size: 1em;
+	&:hover{
+		outline: 0;
+		background: $colgris;
+	}
+}
+/****************************btn Tamaños ***************************/
+
+/*pequeño btn-xs*/
+.btn-xs{
+	padding: .1em .3em;
+	font-size: .9em;
+}
+/*pequeño intermedio btn-sm-xs*/
+.btn-xs-sm{
+	padding: .3em .5em;
+	font-size: .9em;
+}
+/*intermedio grande btn-sm-lg*/
+.btn-lg-sm{
+	padding: .5em .7em;
+	font-size: 1em;
+}
+/*gende btn-lg*/
+.btn-lg{
+	padding: .7em 1em;
+	font-size: 1.1em;
+}
+/******************************btn categorias***********************/
+/*colores*/
+$btnhover: .8;
+$colprin: rgba(46, 134, 193,1);
+$colsec: rgba(39, 174, 96,1);
+$colpel: rgba(250, 88, 68,1);
+/* normal */
+.btn-normal{
+	border: 1px solid $colgrioscuro;
+}
+.btn-prin{
+	border: 1px solid $colprin;
+	background: $colprin;
+	color: $colblanco;
+	&:hover{
+		background: rgba(46, 134, 193, $btnhover);
+		border: 1px solid rgba(46, 134, 193, $btnhover);
+	}
+}
+.btn-sec{
+	border: 1px solid $colsec;
+	background: $colsec;
+	color: $colblanco;
+	&:hover{
+		background: rgba(39, 174, 96, $btnhover) ;
+		border: 1px solid rgba(39, 174, 96, $btnhover);
+	}
+}
+.btn-inf{
+	border: 1px solid $colnaranjaos;
+	background: $colnaranjaos;
+	color: $colblanco;
+	&:hover{
+		background: rgba(243, 156, 18, $btnhover) ;
+		border: 1px solid rgba(243, 156, 18, $btnhover);
+	}
+}
+.btn-adv{
+	border: 1px solid $colprin;
+	background: $colprin;
+	color: $colblanco;
+	&:hover{
+		background: rgba(39, 174, 96, $btnhover) ;
+		border: 1px solid rgba(39, 174, 96, $btnhover);
+	}
+}
+.btn-pel{
+	border: 1px solid $colpel;
+	background: $colpel;
+	color: $colblanco;
+	&:hover{
+		background: rgba(250, 88, 68, $btnhover) ;
+		border: 1px solid rgba(250, 88, 68, $btnhover);
+	}
+}
